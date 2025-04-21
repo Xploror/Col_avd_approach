@@ -1,6 +1,12 @@
 ## Dynamic Window Approach (Reactive Collision Avoidance)
 
 ### Theory
+Dynamic Window Approach (DWA) is a simple local path planning method that specializes in real-time obstacle avoidance. It computes the real-time optimal linear and angular kinematics based on the following objectives:
+* Avoiding static and moving obstacles
+* Reaching the goal position
+* Maintaining the kinematics within the set physical constraints on the robot actuators
+
+At each timestep, the robot knows about its current position, velocity and acceleration limits and with such known data it samples combination of linear and angular velocities for a given predictive time window. It is assumed that the robot is capable of predicting the future position and velocity of the obstacles in the environment as well. Out of all the non-colliding trajectories, the robot chooses the most favourable trajectory that is given a score based on the safety and locally quicker path to the goal. Usually its a trade-off between the two metrics.
 
 ### Methodology
 

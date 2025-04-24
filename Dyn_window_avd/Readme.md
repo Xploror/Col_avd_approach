@@ -12,6 +12,8 @@ At each timestep, the robot knows about its current position, velocity and accel
 
 ### Results
 
+The results look promising! Given the maximum linear and turning velocities, the robots indicated in blue markers are clearly able to locally navigate itself from the starting point (red) to a common goal (green). Moreover, due to the limits in acceleration as well, the robots transition smoothly whenever it senses a clear path to the goal. It is assumed that the obstacles have a fixed velocity and the robots already have the knowledge about it. From the figures, it can be observed that some robots would completely stop when sensing an obstacle in proximity and would rather wait for the obstacle to leave rather than taking a more expensive detour. The hyperparameters like prediction horizon, velocity limits and all teh associated weights can be tuned to have a realistic experiment that can give interesting results!
+
 <div align="center">
   <video src="https://github.com/user-attachments/assets/d05f1151-d931-4609-9c8c-65c10c9bdd79" width="100" />
 </div>
